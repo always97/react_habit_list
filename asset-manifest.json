@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_habit_list/static/css/main.eb6653ca.css",
+    "main.js": "/react_habit_list/static/js/main.c71d5e12.js",
+    "index.html": "/react_habit_list/index.html",
+    "main.eb6653ca.css.map": "/react_habit_list/static/css/main.eb6653ca.css.map",
+    "main.c71d5e12.js.map": "/react_habit_list/static/js/main.c71d5e12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb6653ca.css",
+    "static/js/main.c71d5e12.js"
+  ]
+}
