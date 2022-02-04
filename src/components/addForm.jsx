@@ -1,4 +1,4 @@
-import React, { memo, PureComponent } from 'react';
+import React, { memo } from 'react';
 
 
 const AddForm = memo(props => {
