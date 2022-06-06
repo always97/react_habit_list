@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import Habits from './components/habits';
 import Navbar from './components/navbar';
 
+// test
+
 class App extends Component {
 
   state = {
