@@ -19,12 +19,17 @@ class Habits extends Component {
     this.props.onAdd(name);
   };
 
+  handleLocation = () => {
+    this.props.getLocation();
+  }
+
   render() {
 
     const {habits} = this.props;
     return (
       <>
         <AddForm onAdd={this.handleAdd}/>
+        <button onClick={this.handleLocation}>위도경도 버튼!</button>
         <ul>
           {
             habits.map (habit => (

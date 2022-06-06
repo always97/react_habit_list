@@ -58,6 +58,26 @@ class App extends Component {
     this.setState({ habits });
   };
 
+  getLocation = async () => {
+    if (navigator.geolocation) { // GPS를 지원하면
+      navigator.geolocation.getCurrentPosition(function (position) {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+
+        console.log('위도 : ' + lat + ' 경도 : ' + lng); 
+      }, function (error) {
+        console.error(error);
+      }, {
+        enableHighAccuracy: false,
+        maximumAge: 0,
+        timeout: Infinity
+      });
+    } else {
+      alert('GPS를 지원하지 않습니다');
+      return;
+    }
+  }
+
   render () {
     return (
       <>
@@ -71,6 +91,7 @@ class App extends Component {
           onDelete={this.handleDelete}
           onAdd={this.handleAdd}
           onReset={this.handleReset}
+          getLocation={this.getLocation}
         />
       </>
     )
